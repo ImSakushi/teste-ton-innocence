@@ -20,7 +20,7 @@ const ResultsGrid: FC<ResultsGridProps> = ({ answers }) => {
                     })
                 }
             </div>
-            <div className="font-mono text-sm font-bold text-neutral-700 mt-5">https://the-innocence-test.vrba.dev</div>
+            <div className="font-mono text-sm font-bold text-neutral-700 mt-5">https://testetoninnocence.netlify.app</div>
         </div>
     )
 };
