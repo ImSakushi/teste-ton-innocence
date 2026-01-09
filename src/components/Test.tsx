@@ -34,7 +34,7 @@ const Test: FC<TestProps> = ({ questions, setAnswer, onComplete }: TestProps) =>
                 )}
             </section>
 
-            <Button onClick={onComplete}>Show me the results</Button>
+            <Button onClick={onComplete}>Voir les resultats</Button>
         </main>
     );
 };

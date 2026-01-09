@@ -10,63 +10,63 @@ interface ResultsProps {
 const groups: Array<ResultGroup> = [
     {
         threshold: 100,
-        title: "Completionist",
-        description: "We love your dedication. You are a (wo)man of focus, commitment and sheer fucking will. Please submit your run to speedrun.com."
+        title: "Completionniste",
+        description: "On adore ta dedication. Tu es une personne de concentration, d'engagement et d'une putain de volonte. Merci de soumettre ta run sur speedrun.com."
     },
     {
         threshold: 81,
-        title: "Devil Child",
-        description: "Idk what you're doing on the weekends, but all the more power to you. Lucifer would be proud."
+        title: "Enfant du diable",
+        description: "Je ne sais pas ce que tu fais les week-ends, mais tant mieux pour toi. Lucifer serait fier."
     },
     {
         threshold: 66,
-        title: "Heathen",
-        description: "You like to have a good time, but know when to reign yourself in. good for you. just don't make too many bad choices."
+        title: "Paien",
+        description: "Tu aimes t'amuser, mais tu sais quand te calmer. Tant mieux pour toi. Evite simplement de faire trop de mauvais choix."
     },
     {
         threshold: 56,
-        title: "Corrupted",
-        description: "You're probably either in your 20s or a really rebellious teenager. whichever way, you seem like a good time. come to our rager this weekend?"
+        title: "Corrompu",
+        description: "Tu as probablement la vingtaine ou tu es un ado tres rebelle. Quoi qu'il en soit, tu as l'air d'etre une bonne compagnie. Tu viens a notre grosse soiree ce week-end ?"
     },
     {
         threshold: 46,
-        title: "Baddie",
-        description: "You're the most fun, but my mom would for sure let me hang out with you still. you've managed to find that sweet spot we all look for — teach us your ways."
+        title: "Dur a cuire",
+        description: "Tu es la personne la plus amusante, mais ma mere me laisserait quand meme trainer avec toi. Tu as trouve ce juste milieu que nous cherchons tous — apprends-nous tes techniques."
     },
     {
         threshold: 34,
-        title: "Wild Child",
-        description: "You are the happy medium - you checked both yes and no on this list, but you definitely know how to have fun. we can't wait to see where you'll be in a few years"
+        title: "Enfant sauvage",
+        description: "Tu es le juste milieu — tu as coche des oui et des non sur cette liste, mais tu sais clairement t'amuser. On a hate de voir ou tu en seras dans quelques annees."
     },
     {
         threshold: 26,
-        title: "Rebel",
-        description: "You're getting there, but you're definitely just beginning to experiment with your wild half. welcome to the dark side, love, it's a fun place to be."
+        title: "Rebelle",
+        description: "Tu y arrives, mais tu commences clairement a experimenter ton cote sauvage. Bienvenue du cote obscur, mon chou, c'est un endroit amusant."
     },
     {
         threshold: 16,
-        title: "Sweetheart",
-        description: "You're the mom friend, which is great because everyone needs one. speaking of, can you come over this weekend? in all seriousness, though, don't be afraid to have your own fun sometimes, too."
+        title: "Coeur tendre",
+        description: "Tu es l'ami(e) maman, ce qui est genial parce que tout le monde en a besoin. D'ailleurs, tu peux passer ce week-end ? Plus serieusement, n'aie pas peur de t'amuser toi aussi parfois."
     },
     {
         threshold: 11,
-        title: "Dream Kid",
-        description: "You know when to bend the rules, but I'd be shocked if you'd ever actually broken any. good for you, your record is probably cleaner than ours."
+        title: "Enfant modele",
+        description: "Tu sais quand contourner les regles, mais je serais choque si tu en avais vraiment enfreint. Tant mieux pour toi, ton dossier est probablement plus propre que le notre."
     },
     {
         threshold: 6,
         title: "Innocent",
-        description: "You definitely experiment, but your heart is overall Pure(TM). Your mom is so proud of you right now!"
+        description: "Tu experimentes quand meme, mais ton coeur est globalement Pur(TM). Ta maman est tellement fiere de toi en ce moment !"
     },
     {
         threshold: 1,
-        title: "Angel",
-        description: "You're the friend that my parents would always let me hang out with and never ask any questions about it. fix your halo, honey, and keep up the good work."
+        title: "Ange",
+        description: "Tu es l'ami(e) que mes parents me laisseraient toujours voir sans jamais poser de questions. Remets ton halo en place, et continue comme ca."
     },
     {
         threshold: 0,
-        title: "Theoretical Computer Science Student",
-        description: "You don’t contribute anything to the society. Just be alone! Stop trying. NOBODY LIKES YOU!"
+        title: "Etudiant en informatique theorique",
+        description: "Tu ne contribues a rien dans la societe. Reste seul ! Arrete d'essayer. PERSONNE NE T'AIME !"
     }
 ];
 
@@ -83,7 +83,7 @@ const Results: FC<ResultsProps> = ({ answers }: ResultsProps) => {
 
     return (
         <div className="text-center my-5 xl:my-10">
-            <span className="uppercase text-sm tracking-widest font-bold text-gray-400">Your score &mdash; {score}</span>
+            <span className="uppercase text-sm tracking-widest font-bold text-gray-400">Votre score &mdash; {score}</span>
             <h1 className="text-4xl xl:text-6xl bg-gradient-to-r from-fuchsia-500 to-pink-300 font-black mt-5 mx-auto bg-clip-text text-transparent">{group.title}</h1>
             <p className="px-4 w-full text-sm xl:text-md font-bold sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3 mx-auto my-5 text-neutral-700">
                 {group.description}
